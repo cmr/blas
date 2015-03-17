@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Layout",""],["Transpose",""]],"fn":[["dgemm",""],["dgemv",""]]});

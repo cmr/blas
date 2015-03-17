@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `libblas-sys` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, libblas-sys">
+
+    <title>libblas-sys - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'libblas-sys', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>libblas-sys</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/libblas-sys/lib.rs.html#1-206'>[src]</a></span></h1>
+<div class='docblock'><p>Static linking with the <a href="http://www.netlib.org/blas/">Basic Linear Algebra Subprograms</a>.</p>
+</div><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasColMajor.html'
+                               title='libblas-sys::CblasColMajor'>CblasColMajor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasConjNoTrans.html'
+                               title='libblas-sys::CblasConjNoTrans'>CblasConjNoTrans</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasConjTrans.html'
+                               title='libblas-sys::CblasConjTrans'>CblasConjTrans</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasLeft.html'
+                               title='libblas-sys::CblasLeft'>CblasLeft</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasLower.html'
+                               title='libblas-sys::CblasLower'>CblasLower</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasNoTrans.html'
+                               title='libblas-sys::CblasNoTrans'>CblasNoTrans</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasNonUnit.html'
+                               title='libblas-sys::CblasNonUnit'>CblasNonUnit</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasRight.html'
+                               title='libblas-sys::CblasRight'>CblasRight</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasRowMajor.html'
+                               title='libblas-sys::CblasRowMajor'>CblasRowMajor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasTrans.html'
+                               title='libblas-sys::CblasTrans'>CblasTrans</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasUnit.html'
+                               title='libblas-sys::CblasUnit'>CblasUnit</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CblasUpper.html'
+                               title='libblas-sys::CblasUpper'>CblasUpper</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_caxpby.html'
+                               title='libblas-sys::cblas_caxpby'>cblas_caxpby</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_caxpy.html'
+                               title='libblas-sys::cblas_caxpy'>cblas_caxpy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ccopy.html'
+                               title='libblas-sys::cblas_ccopy'>cblas_ccopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cdotc.html'
+                               title='libblas-sys::cblas_cdotc'>cblas_cdotc</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cdotc_sub.html'
+                               title='libblas-sys::cblas_cdotc_sub'>cblas_cdotc_sub</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cdotu.html'
+                               title='libblas-sys::cblas_cdotu'>cblas_cdotu</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cdotu_sub.html'
+                               title='libblas-sys::cblas_cdotu_sub'>cblas_cdotu_sub</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cgbmv.html'
+                               title='libblas-sys::cblas_cgbmv'>cblas_cgbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cgemm.html'
+                               title='libblas-sys::cblas_cgemm'>cblas_cgemm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cgemm3m.html'
+                               title='libblas-sys::cblas_cgemm3m'>cblas_cgemm3m</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cgemv.html'
+                               title='libblas-sys::cblas_cgemv'>cblas_cgemv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cgerc.html'
+                               title='libblas-sys::cblas_cgerc'>cblas_cgerc</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cgeru.html'
+                               title='libblas-sys::cblas_cgeru'>cblas_cgeru</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_chbmv.html'
+                               title='libblas-sys::cblas_chbmv'>cblas_chbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_chemm.html'
+                               title='libblas-sys::cblas_chemm'>cblas_chemm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_chemv.html'
+                               title='libblas-sys::cblas_chemv'>cblas_chemv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cher.html'
+                               title='libblas-sys::cblas_cher'>cblas_cher</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cher2.html'
+                               title='libblas-sys::cblas_cher2'>cblas_cher2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cher2k.html'
+                               title='libblas-sys::cblas_cher2k'>cblas_cher2k</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cherk.html'
+                               title='libblas-sys::cblas_cherk'>cblas_cherk</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_chpmv.html'
+                               title='libblas-sys::cblas_chpmv'>cblas_chpmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_chpr.html'
+                               title='libblas-sys::cblas_chpr'>cblas_chpr</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_chpr2.html'
+                               title='libblas-sys::cblas_chpr2'>cblas_chpr2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cimatcopy.html'
+                               title='libblas-sys::cblas_cimatcopy'>cblas_cimatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_comatcopy.html'
+                               title='libblas-sys::cblas_comatcopy'>cblas_comatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cscal.html'
+                               title='libblas-sys::cblas_cscal'>cblas_cscal</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_csscal.html'
+                               title='libblas-sys::cblas_csscal'>cblas_csscal</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_cswap.html'
+                               title='libblas-sys::cblas_cswap'>cblas_cswap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_csymm.html'
+                               title='libblas-sys::cblas_csymm'>cblas_csymm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_csyr2k.html'
+                               title='libblas-sys::cblas_csyr2k'>cblas_csyr2k</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_csyrk.html'
+                               title='libblas-sys::cblas_csyrk'>cblas_csyrk</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctbmv.html'
+                               title='libblas-sys::cblas_ctbmv'>cblas_ctbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctbsv.html'
+                               title='libblas-sys::cblas_ctbsv'>cblas_ctbsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctpmv.html'
+                               title='libblas-sys::cblas_ctpmv'>cblas_ctpmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctpsv.html'
+                               title='libblas-sys::cblas_ctpsv'>cblas_ctpsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctrmm.html'
+                               title='libblas-sys::cblas_ctrmm'>cblas_ctrmm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctrmv.html'
+                               title='libblas-sys::cblas_ctrmv'>cblas_ctrmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctrsm.html'
+                               title='libblas-sys::cblas_ctrsm'>cblas_ctrsm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ctrsv.html'
+                               title='libblas-sys::cblas_ctrsv'>cblas_ctrsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dasum.html'
+                               title='libblas-sys::cblas_dasum'>cblas_dasum</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_daxpby.html'
+                               title='libblas-sys::cblas_daxpby'>cblas_daxpby</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_daxpy.html'
+                               title='libblas-sys::cblas_daxpy'>cblas_daxpy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dcopy.html'
+                               title='libblas-sys::cblas_dcopy'>cblas_dcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ddot.html'
+                               title='libblas-sys::cblas_ddot'>cblas_ddot</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dgbmv.html'
+                               title='libblas-sys::cblas_dgbmv'>cblas_dgbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dgemm.html'
+                               title='libblas-sys::cblas_dgemm'>cblas_dgemm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dgemv.html'
+                               title='libblas-sys::cblas_dgemv'>cblas_dgemv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dger.html'
+                               title='libblas-sys::cblas_dger'>cblas_dger</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dimatcopy.html'
+                               title='libblas-sys::cblas_dimatcopy'>cblas_dimatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dnrm2.html'
+                               title='libblas-sys::cblas_dnrm2'>cblas_dnrm2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_domatcopy.html'
+                               title='libblas-sys::cblas_domatcopy'>cblas_domatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_drot.html'
+                               title='libblas-sys::cblas_drot'>cblas_drot</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_drotg.html'
+                               title='libblas-sys::cblas_drotg'>cblas_drotg</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_drotm.html'
+                               title='libblas-sys::cblas_drotm'>cblas_drotm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_drotmg.html'
+                               title='libblas-sys::cblas_drotmg'>cblas_drotmg</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsbmv.html'
+                               title='libblas-sys::cblas_dsbmv'>cblas_dsbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dscal.html'
+                               title='libblas-sys::cblas_dscal'>cblas_dscal</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsdot.html'
+                               title='libblas-sys::cblas_dsdot'>cblas_dsdot</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dspmv.html'
+                               title='libblas-sys::cblas_dspmv'>cblas_dspmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dspr.html'
+                               title='libblas-sys::cblas_dspr'>cblas_dspr</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dspr2.html'
+                               title='libblas-sys::cblas_dspr2'>cblas_dspr2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dswap.html'
+                               title='libblas-sys::cblas_dswap'>cblas_dswap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsymm.html'
+                               title='libblas-sys::cblas_dsymm'>cblas_dsymm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsymv.html'
+                               title='libblas-sys::cblas_dsymv'>cblas_dsymv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsyr.html'
+                               title='libblas-sys::cblas_dsyr'>cblas_dsyr</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsyr2.html'
+                               title='libblas-sys::cblas_dsyr2'>cblas_dsyr2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsyr2k.html'
+                               title='libblas-sys::cblas_dsyr2k'>cblas_dsyr2k</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dsyrk.html'
+                               title='libblas-sys::cblas_dsyrk'>cblas_dsyrk</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtbmv.html'
+                               title='libblas-sys::cblas_dtbmv'>cblas_dtbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtbsv.html'
+                               title='libblas-sys::cblas_dtbsv'>cblas_dtbsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtpmv.html'
+                               title='libblas-sys::cblas_dtpmv'>cblas_dtpmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtpsv.html'
+                               title='libblas-sys::cblas_dtpsv'>cblas_dtpsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtrmm.html'
+                               title='libblas-sys::cblas_dtrmm'>cblas_dtrmm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtrmv.html'
+                               title='libblas-sys::cblas_dtrmv'>cblas_dtrmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtrsm.html'
+                               title='libblas-sys::cblas_dtrsm'>cblas_dtrsm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dtrsv.html'
+                               title='libblas-sys::cblas_dtrsv'>cblas_dtrsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dzasum.html'
+                               title='libblas-sys::cblas_dzasum'>cblas_dzasum</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_dznrm2.html'
+                               title='libblas-sys::cblas_dznrm2'>cblas_dznrm2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_icamax.html'
+                               title='libblas-sys::cblas_icamax'>cblas_icamax</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_idamax.html'
+                               title='libblas-sys::cblas_idamax'>cblas_idamax</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_isamax.html'
+                               title='libblas-sys::cblas_isamax'>cblas_isamax</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_izamax.html'
+                               title='libblas-sys::cblas_izamax'>cblas_izamax</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sasum.html'
+                               title='libblas-sys::cblas_sasum'>cblas_sasum</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_saxpby.html'
+                               title='libblas-sys::cblas_saxpby'>cblas_saxpby</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_saxpy.html'
+                               title='libblas-sys::cblas_saxpy'>cblas_saxpy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_scasum.html'
+                               title='libblas-sys::cblas_scasum'>cblas_scasum</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_scnrm2.html'
+                               title='libblas-sys::cblas_scnrm2'>cblas_scnrm2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_scopy.html'
+                               title='libblas-sys::cblas_scopy'>cblas_scopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sdot.html'
+                               title='libblas-sys::cblas_sdot'>cblas_sdot</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sdsdot.html'
+                               title='libblas-sys::cblas_sdsdot'>cblas_sdsdot</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sgbmv.html'
+                               title='libblas-sys::cblas_sgbmv'>cblas_sgbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sgemm.html'
+                               title='libblas-sys::cblas_sgemm'>cblas_sgemm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sgemv.html'
+                               title='libblas-sys::cblas_sgemv'>cblas_sgemv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sger.html'
+                               title='libblas-sys::cblas_sger'>cblas_sger</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_simatcopy.html'
+                               title='libblas-sys::cblas_simatcopy'>cblas_simatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_snrm2.html'
+                               title='libblas-sys::cblas_snrm2'>cblas_snrm2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_somatcopy.html'
+                               title='libblas-sys::cblas_somatcopy'>cblas_somatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_srot.html'
+                               title='libblas-sys::cblas_srot'>cblas_srot</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_srotg.html'
+                               title='libblas-sys::cblas_srotg'>cblas_srotg</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_srotm.html'
+                               title='libblas-sys::cblas_srotm'>cblas_srotm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_srotmg.html'
+                               title='libblas-sys::cblas_srotmg'>cblas_srotmg</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ssbmv.html'
+                               title='libblas-sys::cblas_ssbmv'>cblas_ssbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sscal.html'
+                               title='libblas-sys::cblas_sscal'>cblas_sscal</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sspmv.html'
+                               title='libblas-sys::cblas_sspmv'>cblas_sspmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sspr.html'
+                               title='libblas-sys::cblas_sspr'>cblas_sspr</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sspr2.html'
+                               title='libblas-sys::cblas_sspr2'>cblas_sspr2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_sswap.html'
+                               title='libblas-sys::cblas_sswap'>cblas_sswap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ssymm.html'
+                               title='libblas-sys::cblas_ssymm'>cblas_ssymm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ssymv.html'
+                               title='libblas-sys::cblas_ssymv'>cblas_ssymv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ssyr.html'
+                               title='libblas-sys::cblas_ssyr'>cblas_ssyr</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ssyr2.html'
+                               title='libblas-sys::cblas_ssyr2'>cblas_ssyr2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ssyr2k.html'
+                               title='libblas-sys::cblas_ssyr2k'>cblas_ssyr2k</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ssyrk.html'
+                               title='libblas-sys::cblas_ssyrk'>cblas_ssyrk</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_stbmv.html'
+                               title='libblas-sys::cblas_stbmv'>cblas_stbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_stbsv.html'
+                               title='libblas-sys::cblas_stbsv'>cblas_stbsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_stpmv.html'
+                               title='libblas-sys::cblas_stpmv'>cblas_stpmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_stpsv.html'
+                               title='libblas-sys::cblas_stpsv'>cblas_stpsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_strmm.html'
+                               title='libblas-sys::cblas_strmm'>cblas_strmm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_strmv.html'
+                               title='libblas-sys::cblas_strmv'>cblas_strmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_strsm.html'
+                               title='libblas-sys::cblas_strsm'>cblas_strsm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_strsv.html'
+                               title='libblas-sys::cblas_strsv'>cblas_strsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_xerbla.html'
+                               title='libblas-sys::cblas_xerbla'>cblas_xerbla</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zaxpby.html'
+                               title='libblas-sys::cblas_zaxpby'>cblas_zaxpby</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zaxpy.html'
+                               title='libblas-sys::cblas_zaxpy'>cblas_zaxpy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zcopy.html'
+                               title='libblas-sys::cblas_zcopy'>cblas_zcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zdotc.html'
+                               title='libblas-sys::cblas_zdotc'>cblas_zdotc</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zdotc_sub.html'
+                               title='libblas-sys::cblas_zdotc_sub'>cblas_zdotc_sub</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zdotu.html'
+                               title='libblas-sys::cblas_zdotu'>cblas_zdotu</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zdotu_sub.html'
+                               title='libblas-sys::cblas_zdotu_sub'>cblas_zdotu_sub</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zdscal.html'
+                               title='libblas-sys::cblas_zdscal'>cblas_zdscal</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zgbmv.html'
+                               title='libblas-sys::cblas_zgbmv'>cblas_zgbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zgemm.html'
+                               title='libblas-sys::cblas_zgemm'>cblas_zgemm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zgemm3m.html'
+                               title='libblas-sys::cblas_zgemm3m'>cblas_zgemm3m</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zgemv.html'
+                               title='libblas-sys::cblas_zgemv'>cblas_zgemv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zgerc.html'
+                               title='libblas-sys::cblas_zgerc'>cblas_zgerc</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zgeru.html'
+                               title='libblas-sys::cblas_zgeru'>cblas_zgeru</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zhbmv.html'
+                               title='libblas-sys::cblas_zhbmv'>cblas_zhbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zhemm.html'
+                               title='libblas-sys::cblas_zhemm'>cblas_zhemm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zhemv.html'
+                               title='libblas-sys::cblas_zhemv'>cblas_zhemv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zher.html'
+                               title='libblas-sys::cblas_zher'>cblas_zher</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zher2.html'
+                               title='libblas-sys::cblas_zher2'>cblas_zher2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zher2k.html'
+                               title='libblas-sys::cblas_zher2k'>cblas_zher2k</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zherk.html'
+                               title='libblas-sys::cblas_zherk'>cblas_zherk</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zhpmv.html'
+                               title='libblas-sys::cblas_zhpmv'>cblas_zhpmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zhpr.html'
+                               title='libblas-sys::cblas_zhpr'>cblas_zhpr</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zhpr2.html'
+                               title='libblas-sys::cblas_zhpr2'>cblas_zhpr2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zimatcopy.html'
+                               title='libblas-sys::cblas_zimatcopy'>cblas_zimatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zomatcopy.html'
+                               title='libblas-sys::cblas_zomatcopy'>cblas_zomatcopy</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zscal.html'
+                               title='libblas-sys::cblas_zscal'>cblas_zscal</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zswap.html'
+                               title='libblas-sys::cblas_zswap'>cblas_zswap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zsymm.html'
+                               title='libblas-sys::cblas_zsymm'>cblas_zsymm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zsyr2k.html'
+                               title='libblas-sys::cblas_zsyr2k'>cblas_zsyr2k</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_zsyrk.html'
+                               title='libblas-sys::cblas_zsyrk'>cblas_zsyrk</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztbmv.html'
+                               title='libblas-sys::cblas_ztbmv'>cblas_ztbmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztbsv.html'
+                               title='libblas-sys::cblas_ztbsv'>cblas_ztbsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztpmv.html'
+                               title='libblas-sys::cblas_ztpmv'>cblas_ztpmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztpsv.html'
+                               title='libblas-sys::cblas_ztpsv'>cblas_ztpsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztrmm.html'
+                               title='libblas-sys::cblas_ztrmm'>cblas_ztrmm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztrmv.html'
+                               title='libblas-sys::cblas_ztrmv'>cblas_ztrmv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztrsm.html'
+                               title='libblas-sys::cblas_ztrsm'>cblas_ztrsm</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cblas_ztrsv.html'
+                               title='libblas-sys::cblas_ztrsv'>cblas_ztrsv</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.CBLAS_DIAG.html'
+                               title='libblas-sys::CBLAS_DIAG'>CBLAS_DIAG</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.CBLAS_ORDER.html'
+                               title='libblas-sys::CBLAS_ORDER'>CBLAS_ORDER</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.CBLAS_SIDE.html'
+                               title='libblas-sys::CBLAS_SIDE'>CBLAS_SIDE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.CBLAS_TRANSPOSE.html'
+                               title='libblas-sys::CBLAS_TRANSPOSE'>CBLAS_TRANSPOSE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.CBLAS_UPLO.html'
+                               title='libblas-sys::CBLAS_UPLO'>CBLAS_UPLO</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.blasint.html'
+                               title='libblas-sys::blasint'>blasint</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.openblas_complex_double.html'
+                               title='libblas-sys::openblas_complex_double'>openblas_complex_double</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.openblas_complex_float.html'
+                               title='libblas-sys::openblas_complex_float'>openblas_complex_float</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "libblas-sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
